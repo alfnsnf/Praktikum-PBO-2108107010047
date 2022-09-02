@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class asep {
+    public static void main(String[] args ) {
+        Scanner baca = new Scanner(System.in);
+
+        int nilai1, nilai2, jumlah1, jumlah2, total1, total2, totalHarga; 
+        float diskon, hasil;
+
+        System.out.print("Harga Barang 1 : ");
+        nilai1 = baca.nextInt();
+
+        System.out.print("Jumlah Barang 1 : ");
+        jumlah1 = baca.nextInt();
+
+        System.out.print("Harga Barang 2 : ");
+        nilai2 = baca.nextInt();
+
+        System.out.print("Jumlah Barang 2 : ");
+        jumlah2 = baca.nextInt();
+
+        total1 = nilai1*jumlah1;
+        total2 = nilai2*jumlah2;
+
+        totalHarga = total1+total2; 
+        diskon = totalHarga * 15/100;
+        hasil = totalHarga - diskon;
+
+        System.out.print("Total Harga Keseluruhan : Rp." +hasil);
+    }
+}
