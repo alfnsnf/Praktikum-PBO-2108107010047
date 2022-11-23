@@ -3,7 +3,7 @@ import java.awt.FlowLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-class Flow extends JFrame{
+public class Flow extends JFrame{
     public Flow() {
         super("Layout Tester");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
